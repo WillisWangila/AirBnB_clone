@@ -4,7 +4,7 @@ Module for Basemodel parent class
 This class defines all common attributes/methods for other classes
 """
 
-import datetime
+from datetime import datetime
 from uuid import uuid4
 
 
@@ -33,7 +33,7 @@ class BaseModel:
         1. adds class name to the dictionary
         2. ensures time values are displayed as strings in isoformat """
         my_dict = self.__dict__.copy()
-        my_dict['__class__'] = type(self).__name__
+        my_dict['__class__'] = self.__class__.__name__
         my_dict['created_at'] = my_dict['created_at'].isoformat()
         my_dict['updated_at'] = my_dict['updated_at'].isoformat()
         return my_dict
@@ -42,4 +42,4 @@ class BaseModel:
         """
         Prints informal string representation of the object
         """
-        return (f"[type(self).__name__] (<self.id>) <self.__dict__>")
+        return (f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}")
