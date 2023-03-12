@@ -42,7 +42,7 @@ $
 And interactively by executing console.py directly
 Example:
 
-'''
+```
 $ ./console.py
 (hbnb) help
 
@@ -54,7 +54,7 @@ EOF  help  quit
 (hbnb) 
 (hbnb) quit
 $
-'''
+```
 
 ## Learning Objectives 
 To be able to explain to anyone without the help of Google about this project.
