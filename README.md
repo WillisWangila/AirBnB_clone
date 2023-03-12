@@ -72,5 +72,5 @@ To be able to explain to anyone without the help of Google about this project.
 - How to handle named arguments in a function
 
 ## AUTHORS
-Jedidah Wambugu
-Willis Wangila
+* **Jedidah Wambugu**
+* **Willis Wangila**
