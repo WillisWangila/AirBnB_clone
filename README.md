@@ -12,6 +12,50 @@ The Command Interpreter is used to manage the whole application's functionality 
 4. Update attributes of an object
 5. Destroy an object
 
+### Using the Console
+
+The console can be run both interactively and non-interactively.
+It works non-interactively by piping commands into console.py
+Example:
+
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+And interactively by executing console.py directly
+Example:
+
+'''
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+'''
+
 ## Learning Objectives 
 To be able to explain to anyone without the help of Google about this project.
 
