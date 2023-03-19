@@ -10,8 +10,8 @@ import sys
 from io import StringIO
 import re
 import os
+import models import storage
 import json
-
 
 class TestHBNBCommand(unittest.TestCase):
 
